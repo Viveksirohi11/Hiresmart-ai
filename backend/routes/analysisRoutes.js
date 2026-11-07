@@ -1,0 +1,10 @@
+import { Router } from "express";
+import { createAnalysis, history, getAnalysis, deleteAnalysis } from "../controllers/analysisController.js";
+import { requireAuth } from "../middleware/authMiddleware.js";
+const router = Router();
+router.use(requireAuth);
+router.post("/analyze", createAnalysis);
+router.get("/history", history);
+router.get("/:id", getAnalysis);
+router.delete("/:id", deleteAnalysis);
+export default router;

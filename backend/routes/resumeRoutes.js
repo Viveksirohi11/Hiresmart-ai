@@ -1,0 +1,10 @@
+import { Router } from "express";
+import { uploadResume, listResumes, deleteResume } from "../controllers/resumeController.js";
+import { requireAuth } from "../middleware/authMiddleware.js";
+import { uploadResume as upload } from "../middleware/uploadMiddleware.js";
+const router = Router();
+router.use(requireAuth);
+router.post("/upload", upload, uploadResume);
+router.get("/", listResumes);
+router.delete("/:id", deleteResume);
+export default router;
