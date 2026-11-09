@@ -57,3 +57,9 @@ Frontend runs at the Vite URL, usually `http://localhost:5173`.
 - This MVP stores extracted resume text in MongoDB and removes the temporary upload after parsing. Add a retention policy and a user-facing data deletion flow before public launch.
 - Add malware scanning, stronger validation, audit logging, and tests before handling real candidate data at scale.
 - Keep API keys only on the server. Never commit `.env`.
+
+## Daily Development Log - 2026-11-09
+
+- Development: 
+- Testing: 
+- Status: Daily development update.
