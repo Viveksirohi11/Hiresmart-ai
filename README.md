@@ -63,3 +63,13 @@ Frontend runs at the Vite URL, usually `http://localhost:5173`.
 - Development: 
 - Testing: 
 - Status: Daily development update.
+
+## Day 3 - Backend Reliability (2026-11-10)
+
+- Added unique request IDs to API responses.
+- Improved centralized API error handling.
+- Added safe handling for malformed JSON and upload errors.
+- Prevented internal server error details from reaching API clients.
+- Added graceful HTTP server shutdown.
+- Strengthened Git ignore rules for local secrets and generated files.
+- Testing: production build and backend syntax checks.

@@ -8,3 +8,16 @@ coverage/
 backend/uploads/*
 !backend/uploads/.gitkeep
 .DS_Store
+
+# Local environment secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies and build output
+**/node_modules/
+frontend/dist/
+
+# Uploaded user files
+backend/uploads/*
+!backend/uploads/.gitkeep
