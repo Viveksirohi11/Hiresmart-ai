@@ -73,3 +73,10 @@ Frontend runs at the Vite URL, usually `http://localhost:5173`.
 - Added graceful HTTP server shutdown.
 - Strengthened Git ignore rules for local secrets and generated files.
 - Testing: production build and backend syntax checks.
+
+## Day 4 - Backend Audit (2026-11-13)
+
+- Reviewed backend project structure.
+- Verified npm scripts (start and dev).
+- Inspected backend dependencies and server configuration.
+- Preparing authentication, API security, validation and database reliability checks.
