@@ -1,4 +1,4 @@
-﻿import "dotenv/config";
+import "dotenv/config";
 import { randomUUID } from "node:crypto";
 import express from "express";
 import cors from "cors";
@@ -10,6 +10,7 @@ import resumeRoutes from "./routes/resumeRoutes.js";
 import analysisRoutes from "./routes/analysisRoutes.js";
 
 const app = express();
+app.disable('x-powered-by');
 
 app.use(helmet());
 
