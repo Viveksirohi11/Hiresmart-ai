@@ -10,6 +10,27 @@ import resumeRoutes from "./routes/resumeRoutes.js";
 import analysisRoutes from "./routes/analysisRoutes.js";
 
 const app = express();
+
+// DAY7_REQUEST_SECURITY_MIDDLEWARE
+app.use((req, res, next) => {
+    const incomingId = req.headers["x-request-id"];
+
+    const requestId =
+        typeof incomingId === "string" &&
+        /^[a-zA-Z0-9._-]{1,80}$/.test(incomingId)
+            ? incomingId
+            : require("crypto").randomUUID();
+
+    req.requestId = requestId;
+
+    res.setHeader("X-Request-ID", requestId);
+    res.setHeader("X-Content-Type-Options", "nosniff");
+    res.setHeader("X-Frame-Options", "DENY");
+    res.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
+    res.setHeader("Permissions-Policy", "camera=(), microphone=(), geolocation=()");
+
+    next();
+});
 app.disable('x-powered-by');
 
 app.use(helmet());
