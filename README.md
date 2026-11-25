@@ -12,7 +12,7 @@ A MERN-style MVP that accepts a PDF resume and job description, extracts resume 
 
 > The match score is an AI-generated estimate, not a validated ATS score or a prediction of hiring outcomes. AI output can be wrong; users should verify recommendations. Do not add skills or experience that are not true.
 
-## Requirements
+## Requirement
 - Node.js 20+
 - MongoDB connection string
 - Gemini API key
