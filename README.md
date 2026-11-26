@@ -77,6 +77,6 @@ Frontend runs at the Vite URL, usually `http://localhost:5173`.
 ## Day 4 - Backend Audit (2026-11-13)
 
 - Reviewed backend project structure.
-- Verified npm scripts (start and dev).
+- Verified npm scripts (start and development).
 - Inspected backend dependencies and server configuration.
 - Preparing authentication, API security, validation and database reliability checks.
